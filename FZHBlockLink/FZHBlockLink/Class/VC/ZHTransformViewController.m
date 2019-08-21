@@ -8,8 +8,10 @@
 
 #import "ZHTransformViewController.h"
 #import "ZHMediator.h"
+#import "ZHAnimationView.h"
 @interface ZHTransformViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) ZHAnimationView *anView;
 
 
 @end
@@ -20,6 +22,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.anView = [[ZHAnimationView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    self.anView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.anView];
    
 }
 - (IBAction)rotationClick:(UIButton *)sender {
@@ -60,6 +66,16 @@
     self.imageView.layer.transform =transform;
     
     [ZHMediator Mediator_performTargetName:@"ZHMetalManager" actionName:@"log:" params:@{@"id":@"1", @"name":@"leeDev",@"ida":@"1"}];
+    
+//    [self.anView animationWithBounds];
+//    [self.anView animationWithPosition];
+//    [self.anView animationWithTransform];
+    
+//    [self.anView animationWithAnchorPoint];
+    [self.anView animationWithCornerRadius];
+//    [self.anView animationWithZposition];
+
+   ;
 }
 
 

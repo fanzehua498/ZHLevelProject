@@ -13,12 +13,12 @@
 +(void)detailShowWithId:(NSString *)Id name:(NSString *)name
 {
     NSDictionary *param = @{@"id":Id,@"name":name};
-    ZHMediator Mediator_performTargetName:<#(nonnull NSString *)#> actionName:<#(nonnull NSString *)#> params:<#(nonnull NSDictionary *)#>
+//    ZHMediator Mediator_performTargetName:<#(nonnull NSString *)#> actionName:<#(nonnull NSString *)#> params:<#(nonnull NSDictionary *)#>
 }
 
-+(void)detailPushVC:(NSString *)vc param:(NSDictionary *)param
-{
-    ZHMediator Mediator_performTargetName:<#(nonnull NSString *)#> actionName:<#(nonnull NSString *)#> params:<#(nonnull NSDictionary *)#>
-}
+//+(void)detailPushVC:(NSString *)vc param:(NSDictionary *)param
+//{
+//    ZHMediator Mediator_performTargetName:<#(nonnull NSString *)#> actionName:<#(nonnull NSString *)#> params:<#(nonnull NSDictionary *)#>
+//}
 
 @end

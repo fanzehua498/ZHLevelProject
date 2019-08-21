@@ -16,6 +16,7 @@
 		047C4A0A23029E6C005D9B50 /* metalfile.metal in Sources */ = {isa = PBXBuildFile; fileRef = 047C4A0923029E6C005D9B50 /* metalfile.metal */; };
 		047C4A0E230688A4005D9B50 /* ZHMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C4A0D230688A4005D9B50 /* ZHMediator.m */; };
 		047C4A112306A501005D9B50 /* ZHMediator+ZHDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C4A102306A501005D9B50 /* ZHMediator+ZHDetail.m */; };
+		047C4A14230B9476005D9B50 /* ZHAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C4A13230B9476005D9B50 /* ZHAnimationView.m */; };
 		04B9CADB22EFF2FF00B5B104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9CADA22EFF2FF00B5B104 /* AppDelegate.m */; };
 		04B9CADE22EFF2FF00B5B104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9CADD22EFF2FF00B5B104 /* ViewController.m */; };
 		04B9CAE122EFF2FF00B5B104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B9CADF22EFF2FF00B5B104 /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 		047C4A0D230688A4005D9B50 /* ZHMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMediator.m; sourceTree = "<group>"; };
 		047C4A0F2306A501005D9B50 /* ZHMediator+ZHDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHMediator+ZHDetail.h"; sourceTree = "<group>"; };
 		047C4A102306A501005D9B50 /* ZHMediator+ZHDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHMediator+ZHDetail.m"; sourceTree = "<group>"; };
+		047C4A12230B9476005D9B50 /* ZHAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAnimationView.h; sourceTree = "<group>"; };
+		047C4A13230B9476005D9B50 /* ZHAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAnimationView.m; sourceTree = "<group>"; };
 		04B9CAD622EFF2FF00B5B104 /* FZHBlockLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZHBlockLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B9CAD922EFF2FF00B5B104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04B9CADA22EFF2FF00B5B104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 		04B9CB0E22EFF36900B5B104 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				047C4A12230B9476005D9B50 /* ZHAnimationView.h */,
+				047C4A13230B9476005D9B50 /* ZHAnimationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				047C4A0A23029E6C005D9B50 /* metalfile.metal in Sources */,
 				04B9CB1422F010B300B5B104 /* ZHBlockChain.m in Sources */,
 				047C49FF23011821005D9B50 /* ZHViewController.m in Sources */,
+				047C4A14230B9476005D9B50 /* ZHAnimationView.m in Sources */,
 				04B9CADB22EFF2FF00B5B104 /* AppDelegate.m in Sources */,
 				047C4A0323024DA9005D9B50 /* ZHMetalOpenGLESViewController.m in Sources */,
 			);
