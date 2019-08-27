@@ -9,6 +9,7 @@
 #import "ZHTransformViewController.h"
 #import "ZHMediator.h"
 #import "ZHAnimationView.h"
+#import "ZHMetalOpenGLESViewController.h"
 @interface ZHTransformViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) ZHAnimationView *anView;
@@ -76,6 +77,12 @@
 //    [self.anView animationWithZposition];
 
    ;
+    
+    
+    
+    
+    ZHMetalOpenGLESViewController *vc = [ZHMetalOpenGLESViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

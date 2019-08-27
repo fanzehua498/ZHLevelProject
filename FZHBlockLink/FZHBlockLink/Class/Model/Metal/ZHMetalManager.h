@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Metal/Metal.h>
+#import <MetalKit/MetalKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHMetalManager : NSObject

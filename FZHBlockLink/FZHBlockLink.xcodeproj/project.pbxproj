@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0472C7B623150A9600BF12AD /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0472C7B523150A9600BF12AD /* shaders.metal */; };
 		047C49F923010B19005D9B50 /* ZHTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C49F823010B19005D9B50 /* ZHTransformViewController.m */; };
 		047C49FB230112BD005D9B50 /* ZHTransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047C49FA230112BD005D9B50 /* ZHTransformViewController.xib */; };
 		047C49FF23011821005D9B50 /* ZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C49FD23011821005D9B50 /* ZHViewController.m */; };
@@ -28,6 +29,7 @@
 		04B9CB1122EFF38300B5B104 /* ZHBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9CB1022EFF38300B5B104 /* ZHBlock.m */; };
 		04B9CB1422F010B300B5B104 /* ZHBlockChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9CB1322F010B300B5B104 /* ZHBlockChain.m */; };
 		04B9CB1A22F2DE0300B5B104 /* ZHCellchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9CB1922F2DE0300B5B104 /* ZHCellchangeViewController.m */; };
+		04C28E70230FCE7900DA3F5A /* ZHMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C28E6F230FCE7900DA3F5A /* ZHMetalView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0472C7B523150A9600BF12AD /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		0472C7B7231511C700BF12AD /* LYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYShaderTypes.h; sourceTree = "<group>"; };
 		047C49F723010B19005D9B50 /* ZHTransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTransformViewController.h; sourceTree = "<group>"; };
 		047C49F823010B19005D9B50 /* ZHTransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTransformViewController.m; sourceTree = "<group>"; };
 		047C49FA230112BD005D9B50 /* ZHTransformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHTransformViewController.xib; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		04B9CB1322F010B300B5B104 /* ZHBlockChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBlockChain.m; sourceTree = "<group>"; };
 		04B9CB1822F2DE0300B5B104 /* ZHCellchangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCellchangeViewController.h; sourceTree = "<group>"; };
 		04B9CB1922F2DE0300B5B104 /* ZHCellchangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCellchangeViewController.m; sourceTree = "<group>"; };
+		04C28E6E230FCE7900DA3F5A /* ZHMetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMetalView.h; sourceTree = "<group>"; };
+		04C28E6F230FCE7900DA3F5A /* ZHMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMetalView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				047C4A0923029E6C005D9B50 /* metalfile.metal */,
+				0472C7B523150A9600BF12AD /* shaders.metal */,
+				0472C7B7231511C700BF12AD /* LYShaderTypes.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -241,10 +249,20 @@
 		04B9CB0E22EFF36900B5B104 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04C28E6D230FCE5000DA3F5A /* Metal */,
 				047C4A12230B9476005D9B50 /* ZHAnimationView.h */,
 				047C4A13230B9476005D9B50 /* ZHAnimationView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04C28E6D230FCE5000DA3F5A /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				04C28E6E230FCE7900DA3F5A /* ZHMetalView.h */,
+				04C28E6F230FCE7900DA3F5A /* ZHMetalView.m */,
+			);
+			path = Metal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +406,8 @@
 				04B9CB1122EFF38300B5B104 /* ZHBlock.m in Sources */,
 				04B9CAE922EFF30300B5B104 /* main.m in Sources */,
 				047C4A0E230688A4005D9B50 /* ZHMediator.m in Sources */,
+				0472C7B623150A9600BF12AD /* shaders.metal in Sources */,
+				04C28E70230FCE7900DA3F5A /* ZHMetalView.m in Sources */,
 				047C4A0A23029E6C005D9B50 /* metalfile.metal in Sources */,
 				04B9CB1422F010B300B5B104 /* ZHBlockChain.m in Sources */,
 				047C49FF23011821005D9B50 /* ZHViewController.m in Sources */,
