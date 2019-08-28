@@ -8,6 +8,7 @@
 
 #import "ZHCellchangeViewController.h"
 #import "ZHTransformViewController.h"
+#import "ZHMetal2ViewController.h"
 @interface ZHCellchangeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) UITableView *table;
@@ -56,7 +57,8 @@
     
 //    [self.table reloadData];
 //    [[NSBundle mainBundle] loadNibNamed:@"ZHTransformViewController" owner:nil options:nil].lastObject;
-    ZHTransformViewController *vc = [[ZHTransformViewController alloc] initWithNibName:@"ZHTransformViewController" bundle:[NSBundle mainBundle]];
+    ZHMetal2ViewController *vc = [[ZHMetal2ViewController alloc] initWithNibName:@"ZHMetal2ViewController" bundle:[NSBundle mainBundle]];
+//    ZHTransformViewController *vc = [[ZHTransformViewController alloc] initWithNibName:@"ZHTransformViewController" bundle:[NSBundle mainBundle]];
     [self.navigationController pushViewController:vc animated:YES];
     return;
     

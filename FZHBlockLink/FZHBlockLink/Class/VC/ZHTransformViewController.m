@@ -10,6 +10,7 @@
 #import "ZHMediator.h"
 #import "ZHAnimationView.h"
 #import "ZHMetalOpenGLESViewController.h"
+#import "ZHMetal2ViewController.h"
 @interface ZHTransformViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) ZHAnimationView *anView;
