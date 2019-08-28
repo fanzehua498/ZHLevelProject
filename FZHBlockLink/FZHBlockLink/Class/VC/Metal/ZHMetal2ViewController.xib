@@ -63,6 +63,9 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页_18" translatesAutoresizingMaskIntoConstraints="NO" id="vX9-pS-fJU">
+                    <rect key="frame" x="29" y="507" width="186" height="110"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -73,11 +76,13 @@
                 <constraint firstItem="UYt-yh-ODU" firstAttribute="leading" secondItem="uzb-v1-lb0" secondAttribute="leading" id="FxV-Jl-mCS"/>
                 <constraint firstItem="uA7-6t-FIj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="201" id="KnE-FQ-Mbc"/>
                 <constraint firstItem="JCs-oj-Afx" firstAttribute="top" secondItem="qxs-tk-WVG" secondAttribute="bottom" constant="30" id="M86-Nk-Jv4"/>
+                <constraint firstItem="vX9-pS-fJU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="29" id="Mdl-2w-Ytw"/>
                 <constraint firstItem="JCs-oj-Afx" firstAttribute="leading" secondItem="qxs-tk-WVG" secondAttribute="leading" id="S0D-TR-iup"/>
                 <constraint firstItem="xqZ-A7-j5j" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="29" id="WyV-2v-3Cf"/>
                 <constraint firstItem="qxs-tk-WVG" firstAttribute="leading" secondItem="xqZ-A7-j5j" secondAttribute="leading" id="a4S-Sf-pRl"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="682-AM-WVP" secondAttribute="trailing" constant="82" id="dyu-Bj-iaq"/>
                 <constraint firstItem="682-AM-WVP" firstAttribute="top" secondItem="uA7-6t-FIj" secondAttribute="bottom" constant="21" id="eSZ-BY-a47"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="vX9-pS-fJU" secondAttribute="bottom" constant="50" id="eoo-hV-Cgj"/>
                 <constraint firstItem="5Ok-uL-g1j" firstAttribute="leading" secondItem="xqZ-A7-j5j" secondAttribute="trailing" constant="30" id="ohc-Um-8hx"/>
                 <constraint firstItem="xqZ-A7-j5j" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="35" id="qFD-S0-4M1"/>
                 <constraint firstItem="qxs-tk-WVG" firstAttribute="top" secondItem="xqZ-A7-j5j" secondAttribute="bottom" constant="30" id="qxP-cn-IYl"/>
@@ -87,4 +92,7 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
+    <resources>
+        <image name="首页_18" width="186" height="110"/>
+    </resources>
 </document>

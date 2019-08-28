@@ -90,7 +90,7 @@
 }
 
 - (void)setupTexture {
-    UIImage *image = [UIImage imageNamed:@"desktop"];
+    UIImage *image = [UIImage imageNamed:@"首页_18"];
     MTLTextureDescriptor *textureDescriptor = [[MTLTextureDescriptor alloc] init];
     textureDescriptor.pixelFormat = MTLPixelFormatRGBA8Unorm;
     textureDescriptor.width = image.size.width;
