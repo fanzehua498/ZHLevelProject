@@ -111,7 +111,7 @@
     self.texture = [self.mtkView.device newTextureWithDescriptor:textureDes];
     
     //MTLRegion类似UIKit的frame，用于表明纹理数据的存放区域；
-    MTLRegion regin = {{0,0,0},{image.size.width,image.size.height,0}};
+    MTLRegion regin = {{0,0,0},{image.size.width,image.size.height,1}};
     Byte *imageByte = [self loadImage:image];
     
     if (imageByte) {
