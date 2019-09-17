@@ -41,7 +41,13 @@
     self.mtkView.delegate = self;
     self.viewportSize = (vector_uint2){self.mtkView.drawableSize.width, self.mtkView.drawableSize.height};
     [self customInit];
+    
+    
+    
+    
 }
+
+
 - (void)customInit {
     [self setupPipeline];
     [self setupVertex];

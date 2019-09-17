@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ZHCellchangeViewController.h"
+#import "DCURLRouter.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [DCURLRouter loadConfigDictFromPlist:@"DCURLRouter.plist"];
+    
+    
     ZHCellchangeViewController *vc = [ZHCellchangeViewController new];
     
     UINavigationController *nac = [[UINavigationController alloc] initWithRootViewController:vc];

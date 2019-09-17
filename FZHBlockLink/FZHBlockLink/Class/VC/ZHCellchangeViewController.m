@@ -57,9 +57,12 @@
     
 //    [self.table reloadData];
 //    [[NSBundle mainBundle] loadNibNamed:@"ZHTransformViewController" owner:nil options:nil].lastObject;
-    ZHMetal2ViewController *vc = [[ZHMetal2ViewController alloc] initWithNibName:@"ZHMetal2ViewController" bundle:[NSBundle mainBundle]];
+//    NSURL *url = [NSURL URLWithString:@"itms-services://?action=download-manifest&url=https://gitee.com/fanzehua498/DownloadForIpa/raw/master/ios/app/manifest.plist"];
+//    [[UIApplication sharedApplication] openURL:url];
+//    ZHMetal2ViewController *vc = [[ZHMetal2ViewController alloc] initWithNibName:@"ZHMetal2ViewController" bundle:[NSBundle mainBundle]];
 //    ZHTransformViewController *vc = [[ZHTransformViewController alloc] initWithNibName:@"ZHTransformViewController" bundle:[NSBundle mainBundle]];
-    [self.navigationController pushViewController:vc animated:YES];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [DCURLRouter pushURLString:@"ZHLink://Metal2VC" query:@{} animated:YES replace:NO];
     return;
     
     
