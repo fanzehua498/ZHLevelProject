@@ -8,6 +8,8 @@
 	<string>WebViewController</string>
 	<key>ZHLink</key>
 	<dict>
+		<key>ZHLink://MVPVC</key>
+		<string>ZHJGViewController</string>
 		<key>ZHLink://Metal2VC</key>
 		<string>ZHMetal2ViewController</string>
 	</dict>

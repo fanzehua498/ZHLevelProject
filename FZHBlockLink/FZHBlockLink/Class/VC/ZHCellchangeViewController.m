@@ -62,7 +62,14 @@
 //    ZHMetal2ViewController *vc = [[ZHMetal2ViewController alloc] initWithNibName:@"ZHMetal2ViewController" bundle:[NSBundle mainBundle]];
 //    ZHTransformViewController *vc = [[ZHTransformViewController alloc] initWithNibName:@"ZHTransformViewController" bundle:[NSBundle mainBundle]];
 //    [self.navigationController pushViewController:vc animated:YES];
-    [DCURLRouter pushURLString:@"ZHLink://Metal2VC" query:@{} animated:YES replace:NO];
+    
+    if (indexPath.row == 0) {
+        [DCURLRouter pushURLString:@"ZHLink://Metal2VC" query:@{} animated:YES replace:NO];
+    }else if (indexPath.row == 1){
+        //ZHLink://MVPVC
+        [DCURLRouter pushURLString:@"ZHLink://MVPVC" query:@{} animated:YES replace:NO];
+    }
+    
     return;
     
     

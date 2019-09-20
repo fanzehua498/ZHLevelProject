@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040D58FC23320752009003B6 /* H264编码 in Resources */ = {isa = PBXBuildFile; fileRef = 040D58FB23320752009003B6 /* H264编码 */; };
+		040D5900233216F7009003B6 /* ZHVideoBoxManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D58FF233216F7009003B6 /* ZHVideoBoxManage.m */; };
+		040D590423331FCD009003B6 /* ZHJGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D590323331FCD009003B6 /* ZHJGViewController.m */; };
+		040D590823331FF0009003B6 /* ZHPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D590723331FF0009003B6 /* ZHPresent.m */; };
+		040D590B23333102009003B6 /* ZHMVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D590A23333102009003B6 /* ZHMVPModel.m */; };
+		040D591323336A22009003B6 /* ZHMVP1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D591123336A22009003B6 /* ZHMVP1TableViewCell.m */; };
+		040D591423336A22009003B6 /* ZHMVP1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040D591223336A22009003B6 /* ZHMVP1TableViewCell.xib */; };
+		040D591D233478B5009003B6 /* ZHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D591C233478B5009003B6 /* ZHDataSource.m */; };
 		0472C7B623150A9600BF12AD /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0472C7B523150A9600BF12AD /* shaders.metal */; };
 		0472C7BC2316602700BF12AD /* ZHMetal2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472C7BA2316602700BF12AD /* ZHMetal2ViewController.m */; };
 		0472C7BD2316602700BF12AD /* ZHMetal2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472C7BB2316602700BF12AD /* ZHMetal2ViewController.xib */; };
@@ -38,6 +46,9 @@
 		04EBD9C7231E5EA600F3CE28 /* UIViewController+ReverseValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EBD9C1231E5EA600F3CE28 /* UIViewController+ReverseValue.m */; };
 		04EBD9C8231E5EA600F3CE28 /* DCURLNavgation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EBD9C4231E5EA600F3CE28 /* DCURLNavgation.m */; };
 		04EBD9CB231E5F1800F3CE28 /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04EBD9CA231E5F1800F3CE28 /* DCURLRouter.plist */; };
+		1955106552671959781F5412 /* libPods-FZHBlockLinkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C652AEEAD58B5854ACB54 /* libPods-FZHBlockLinkTests.a */; };
+		2B3DC3D155F40F84BC67F3F7 /* libPods-FZHBlockLinkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B6727C9CC2FA8F05B5B594 /* libPods-FZHBlockLinkUITests.a */; };
+		AC7574CB1EE40D3421E2B2A1 /* libPods-FZHBlockLink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF04CE6DD2819F284E22E4D1 /* libPods-FZHBlockLink.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +69,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040D58FB23320752009003B6 /* H264编码 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "H264编码"; sourceTree = "<group>"; };
+		040D58FE233216F7009003B6 /* ZHVideoBoxManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHVideoBoxManage.h; sourceTree = "<group>"; };
+		040D58FF233216F7009003B6 /* ZHVideoBoxManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHVideoBoxManage.m; sourceTree = "<group>"; };
+		040D590223331FCD009003B6 /* ZHJGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHJGViewController.h; sourceTree = "<group>"; };
+		040D590323331FCD009003B6 /* ZHJGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHJGViewController.m; sourceTree = "<group>"; };
+		040D590623331FF0009003B6 /* ZHPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHPresent.h; sourceTree = "<group>"; };
+		040D590723331FF0009003B6 /* ZHPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHPresent.m; sourceTree = "<group>"; };
+		040D590923333102009003B6 /* ZHMVPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVPModel.h; sourceTree = "<group>"; };
+		040D590A23333102009003B6 /* ZHMVPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVPModel.m; sourceTree = "<group>"; };
+		040D591023336A22009003B6 /* ZHMVP1TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVP1TableViewCell.h; sourceTree = "<group>"; };
+		040D591123336A22009003B6 /* ZHMVP1TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVP1TableViewCell.m; sourceTree = "<group>"; };
+		040D591223336A22009003B6 /* ZHMVP1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHMVP1TableViewCell.xib; sourceTree = "<group>"; };
+		040D591B233478B5009003B6 /* ZHDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHDataSource.h; sourceTree = "<group>"; };
+		040D591C233478B5009003B6 /* ZHDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHDataSource.m; sourceTree = "<group>"; };
 		0472C7B523150A9600BF12AD /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
 		0472C7B7231511C700BF12AD /* LYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYShaderTypes.h; sourceTree = "<group>"; };
 		0472C7B92316602700BF12AD /* ZHMetal2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMetal2ViewController.h; sourceTree = "<group>"; };
@@ -117,6 +142,15 @@
 		04EBD9CA231E5F1800F3CE28 /* DCURLRouter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DCURLRouter.plist; sourceTree = "<group>"; };
 		04EBD9CC231E617E00F3CE28 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04EBD9CD231E626E00F3CE28 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		222C652AEEAD58B5854ACB54 /* libPods-FZHBlockLinkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FZHBlockLinkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B6727C9CC2FA8F05B5B594 /* libPods-FZHBlockLinkUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FZHBlockLinkUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A08410A0ED60F91EC596B29 /* Pods-FZHBlockLinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHBlockLinkTests.debug.xcconfig"; path = "Target Support Files/Pods-FZHBlockLinkTests/Pods-FZHBlockLinkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACBD9C6066BB5E7C07B23F0B /* Pods-FZHBlockLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHBlockLink.release.xcconfig"; path = "Target Support Files/Pods-FZHBlockLink/Pods-FZHBlockLink.release.xcconfig"; sourceTree = "<group>"; };
+		D9E758CDB96A296A86C0F499 /* Pods-FZHBlockLinkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHBlockLinkUITests.debug.xcconfig"; path = "Target Support Files/Pods-FZHBlockLinkUITests/Pods-FZHBlockLinkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF04CE6DD2819F284E22E4D1 /* libPods-FZHBlockLink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FZHBlockLink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FAB0F14DAF728436F8C725 /* Pods-FZHBlockLinkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHBlockLinkUITests.release.xcconfig"; path = "Target Support Files/Pods-FZHBlockLinkUITests/Pods-FZHBlockLinkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5CF1B60441951D81394E30E /* Pods-FZHBlockLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHBlockLink.debug.xcconfig"; path = "Target Support Files/Pods-FZHBlockLink/Pods-FZHBlockLink.debug.xcconfig"; sourceTree = "<group>"; };
+		F98EF28A297D0F11DDF950C3 /* Pods-FZHBlockLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHBlockLinkTests.release.xcconfig"; path = "Target Support Files/Pods-FZHBlockLinkTests/Pods-FZHBlockLinkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7574CB1EE40D3421E2B2A1 /* libPods-FZHBlockLink.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1955106552671959781F5412 /* libPods-FZHBlockLinkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +174,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3DC3D155F40F84BC67F3F7 /* libPods-FZHBlockLinkUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040D58FD233216D2009003B6 /* Box */ = {
+			isa = PBXGroup;
+			children = (
+				040D58FE233216F7009003B6 /* ZHVideoBoxManage.h */,
+				040D58FF233216F7009003B6 /* ZHVideoBoxManage.m */,
+			);
+			path = Box;
+			sourceTree = "<group>";
+		};
+		040D590123331FA7009003B6 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				040D590223331FCD009003B6 /* ZHJGViewController.h */,
+				040D590323331FCD009003B6 /* ZHJGViewController.m */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		040D590523331FD9009003B6 /* 架构 */ = {
+			isa = PBXGroup;
+			children = (
+				040D590623331FF0009003B6 /* ZHPresent.h */,
+				040D590723331FF0009003B6 /* ZHPresent.m */,
+				040D590923333102009003B6 /* ZHMVPModel.h */,
+				040D590A23333102009003B6 /* ZHMVPModel.m */,
+				040D591B233478B5009003B6 /* ZHDataSource.h */,
+				040D591C233478B5009003B6 /* ZHDataSource.m */,
+			);
+			path = "架构";
+			sourceTree = "<group>";
+		};
+		040D590C2333645E009003B6 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				040D591023336A22009003B6 /* ZHMVP1TableViewCell.h */,
+				040D591123336A22009003B6 /* ZHMVP1TableViewCell.m */,
+				040D591223336A22009003B6 /* ZHMVP1TableViewCell.xib */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
 		0472C7B823165FD800BF12AD /* Metal */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +273,8 @@
 				04B9CAF122EFF30300B5B104 /* FZHBlockLinkTests */,
 				04B9CAFC22EFF30300B5B104 /* FZHBlockLinkUITests */,
 				04B9CAD722EFF2FF00B5B104 /* Products */,
+				32E2F7462C3584261C56B1F2 /* Pods */,
+				1E7E0381F7A51D90F40A7F1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +338,7 @@
 		04B9CB0C22EFF35A00B5B104 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				040D590123331FA7009003B6 /* MVP */,
 				0472C7B823165FD800BF12AD /* Metal */,
 				04B9CB1822F2DE0300B5B104 /* ZHCellchangeViewController.h */,
 				04B9CB1922F2DE0300B5B104 /* ZHCellchangeViewController.m */,
@@ -274,6 +355,8 @@
 		04B9CB0D22EFF36100B5B104 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				040D590523331FD9009003B6 /* 架构 */,
+				040D58FD233216D2009003B6 /* Box */,
 				047C4A0B2306886A005D9B50 /* 中间件 */,
 				047C4A052302969B005D9B50 /* Metal */,
 				04B9CB0F22EFF38300B5B104 /* ZHBlock.h */,
@@ -287,6 +370,7 @@
 		04B9CB0E22EFF36900B5B104 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				040D590C2333645E009003B6 /* MVP */,
 				04C28E6D230FCE5000DA3F5A /* Metal */,
 				047C4A12230B9476005D9B50 /* ZHAnimationView.h */,
 				047C4A13230B9476005D9B50 /* ZHAnimationView.m */,
@@ -307,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				04D88B63232733E4004E2A60 /* AVPlay */,
+				040D58FB23320752009003B6 /* H264编码 */,
 			);
 			path = "原理";
 			sourceTree = "<group>";
@@ -337,6 +422,29 @@
 			path = File;
 			sourceTree = "<group>";
 		};
+		1E7E0381F7A51D90F40A7F1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF04CE6DD2819F284E22E4D1 /* libPods-FZHBlockLink.a */,
+				222C652AEEAD58B5854ACB54 /* libPods-FZHBlockLinkTests.a */,
+				26B6727C9CC2FA8F05B5B594 /* libPods-FZHBlockLinkUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32E2F7462C3584261C56B1F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF1B60441951D81394E30E /* Pods-FZHBlockLink.debug.xcconfig */,
+				ACBD9C6066BB5E7C07B23F0B /* Pods-FZHBlockLink.release.xcconfig */,
+				6A08410A0ED60F91EC596B29 /* Pods-FZHBlockLinkTests.debug.xcconfig */,
+				F98EF28A297D0F11DDF950C3 /* Pods-FZHBlockLinkTests.release.xcconfig */,
+				D9E758CDB96A296A86C0F499 /* Pods-FZHBlockLinkUITests.debug.xcconfig */,
+				E3FAB0F14DAF728436F8C725 /* Pods-FZHBlockLinkUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +452,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04B9CB0222EFF30300B5B104 /* Build configuration list for PBXNativeTarget "FZHBlockLink" */;
 			buildPhases = (
+				CE97F9BD3E440EB57EC38D6B /* [CP] Check Pods Manifest.lock */,
 				04B9CAD222EFF2FF00B5B104 /* Sources */,
 				04B9CAD322EFF2FF00B5B104 /* Frameworks */,
 				04B9CAD422EFF2FF00B5B104 /* Resources */,
@@ -361,6 +470,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04B9CB0522EFF30300B5B104 /* Build configuration list for PBXNativeTarget "FZHBlockLinkTests" */;
 			buildPhases = (
+				2034A9D5854F0D0FCF4E6BEA /* [CP] Check Pods Manifest.lock */,
 				04B9CAEA22EFF30300B5B104 /* Sources */,
 				04B9CAEB22EFF30300B5B104 /* Frameworks */,
 				04B9CAEC22EFF30300B5B104 /* Resources */,
@@ -379,6 +489,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04B9CB0822EFF30300B5B104 /* Build configuration list for PBXNativeTarget "FZHBlockLinkUITests" */;
 			buildPhases = (
+				322AD5A34383F2B61AE9AF8B /* [CP] Check Pods Manifest.lock */,
 				04B9CAF522EFF30300B5B104 /* Sources */,
 				04B9CAF622EFF30300B5B104 /* Frameworks */,
 				04B9CAF722EFF30300B5B104 /* Resources */,
@@ -442,11 +553,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B9CAE622EFF30300B5B104 /* LaunchScreen.storyboard in Resources */,
+				040D58FC23320752009003B6 /* H264编码 in Resources */,
 				0472C7BD2316602700BF12AD /* ZHMetal2ViewController.xib in Resources */,
 				04B9CAE322EFF30300B5B104 /* Assets.xcassets in Resources */,
 				04D88B64232733E4004E2A60 /* AVPlay in Resources */,
 				047C4A0023011821005D9B50 /* ZHViewController.xib in Resources */,
 				04B9CAE122EFF2FF00B5B104 /* Main.storyboard in Resources */,
+				040D591423336A22009003B6 /* ZHMVP1TableViewCell.xib in Resources */,
 				047C49FB230112BD005D9B50 /* ZHTransformViewController.xib in Resources */,
 				04EBD9CB231E5F1800F3CE28 /* DCURLRouter.plist in Resources */,
 			);
@@ -468,20 +581,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2034A9D5854F0D0FCF4E6BEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FZHBlockLinkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		322AD5A34383F2B61AE9AF8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FZHBlockLinkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE97F9BD3E440EB57EC38D6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FZHBlockLink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04B9CAD222EFF2FF00B5B104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				047C49F923010B19005D9B50 /* ZHTransformViewController.m in Sources */,
+				040D590823331FF0009003B6 /* ZHPresent.m in Sources */,
 				04EBD9C8231E5EA600F3CE28 /* DCURLNavgation.m in Sources */,
 				047C4A08230296B6005D9B50 /* ZHMetalManager.m in Sources */,
 				04EBD9C6231E5EA600F3CE28 /* DCURLRouter.m in Sources */,
 				04EBD9C5231E5EA600F3CE28 /* UIViewController+DCURLRouter.m in Sources */,
+				040D591D233478B5009003B6 /* ZHDataSource.m in Sources */,
 				047C4A112306A501005D9B50 /* ZHMediator+ZHDetail.m in Sources */,
+				040D5900233216F7009003B6 /* ZHVideoBoxManage.m in Sources */,
 				04B9CB1A22F2DE0300B5B104 /* ZHCellchangeViewController.m in Sources */,
 				04B9CADE22EFF2FF00B5B104 /* ViewController.m in Sources */,
 				04B9CB1122EFF38300B5B104 /* ZHBlock.m in Sources */,
+				040D591323336A22009003B6 /* ZHMVP1TableViewCell.m in Sources */,
 				04B9CAE922EFF30300B5B104 /* main.m in Sources */,
 				047C4A0E230688A4005D9B50 /* ZHMediator.m in Sources */,
 				0472C7B623150A9600BF12AD /* shaders.metal in Sources */,
@@ -491,7 +677,9 @@
 				0472C7BC2316602700BF12AD /* ZHMetal2ViewController.m in Sources */,
 				04B9CB1422F010B300B5B104 /* ZHBlockChain.m in Sources */,
 				047C49FF23011821005D9B50 /* ZHViewController.m in Sources */,
+				040D590B23333102009003B6 /* ZHMVPModel.m in Sources */,
 				047C4A14230B9476005D9B50 /* ZHAnimationView.m in Sources */,
+				040D590423331FCD009003B6 /* ZHJGViewController.m in Sources */,
 				04B9CADB22EFF2FF00B5B104 /* AppDelegate.m in Sources */,
 				047C4A0323024DA9005D9B50 /* ZHMetalOpenGLESViewController.m in Sources */,
 			);
@@ -662,6 +850,7 @@
 		};
 		04B9CB0322EFF30300B5B104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5CF1B60441951D81394E30E /* Pods-FZHBlockLink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -680,6 +869,7 @@
 		};
 		04B9CB0422EFF30300B5B104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACBD9C6066BB5E7C07B23F0B /* Pods-FZHBlockLink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -698,6 +888,7 @@
 		};
 		04B9CB0622EFF30300B5B104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A08410A0ED60F91EC596B29 /* Pods-FZHBlockLinkTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -716,6 +907,7 @@
 		};
 		04B9CB0722EFF30300B5B104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98EF28A297D0F11DDF950C3 /* Pods-FZHBlockLinkTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -734,6 +926,7 @@
 		};
 		04B9CB0922EFF30300B5B104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E758CDB96A296A86C0F499 /* Pods-FZHBlockLinkUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FZHBlockLinkUITests/Info.plist;
@@ -751,6 +944,7 @@
 		};
 		04B9CB0A22EFF30300B5B104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3FAB0F14DAF728436F8C725 /* Pods-FZHBlockLinkUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FZHBlockLinkUITests/Info.plist;
