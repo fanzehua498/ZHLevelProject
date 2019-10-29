@@ -42,24 +42,38 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://view.csslcloud.net/api/view/callback?recordid=B2686C60AD2D62CD&roomid=41293D1845E4D1269C33DC5901307461&userid=AD701F3E79C9B5EE&autoLogin=true&viewername=%E4%B8%80%E5%8F%B6%E7%9F%A5%E7%A7%8B&viewertoken=**"]]];
     [self.view addSubview:self.webView];
 //    [self.webView loadHTMLString:@"" baseURL:[NSURL URLWithString:@"https://view.csslcloud.net/api/view/callback?recordid=B2686C60AD2D62CD&roomid=41293D1845E4D1269C33DC5901307461&userid=AD701F3E79C9B5EE&autoLogin=true&viewername=%E4%B8%80%E5%8F%B6%E7%9F%A5%E7%A7%8B&viewertoken=**"]];
-    
+    self.runloopMark= YES;
     NSLog(@"1");
+    
+    __weak typeof(self) ws = self;
     [self.webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
         NSLog(@"uuu:%@",result);
         NSLog(@"2");
+        ws.runloopMark = NO;
     }];
-//    self.runloopMark
     
-//    self.webView performSelectorOnMainThread:@selector(checkRunloopmark) withObject:nil waitUntilDone:YES modes:<#(nullable NSArray<NSString *> *)#>
     
-//    [NSRunLoop mainRunLoop] performSelectorOnMainThread:<#(nonnull SEL)#> withObject:<#(nullable id)#> waitUntilDone:YES
-   
+    while (self.runloopMark) {
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+        NSLog(@"===========");
+    }
     
     NSLog(@"3");
 
 }
 
-
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    NSLog(@"%@",change);
+}
+    
+    
+- (void)checkRunloopmark
+{
+    while (self.runloopMark) {
+        
+    }
+}
 
 - (void)setConfigWeb
 {

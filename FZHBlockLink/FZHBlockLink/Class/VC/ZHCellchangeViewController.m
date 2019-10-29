@@ -134,7 +134,7 @@
     }else if (indexPath.row == 1){
         //ZHLink://MVPVC
         [DCURLRouter pushURLString:@"ZHLink://MVPVC" query:@{} animated:YES replace:NO];
-    }else if(indexPath == 2){
+    }else if(indexPath.row == 2){
         [DCURLRouter pushURLString:@"ZHLink://VC" query:@{} animated:YES replace:NO];
     }else{
         ZHOneViewController *vc = [ZHOneViewController new];
