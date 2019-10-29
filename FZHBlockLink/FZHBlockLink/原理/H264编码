@@ -8,6 +8,8 @@
 软编码：使用CPU来进行编码计算。
 实现直接、简单，参数调整方便，易升级，但CPU负载重，性能较硬编码低，低码率下质量通常比硬编码好。
 
+硬编码的优点：提高性能、增加效率、延长电量的使用
+
 3.压缩算法
 压缩算发分为2种，有损压缩和无损压缩。需要根据不同的场景(考虑因素包括存储设备,传输网络环境,播放设备等)选用不同的压缩编码算法.
 有损：解压后数据不能完全复原，会丢失一部分信息，压缩比越小，丢失的信息越多。信号还原的失真就会越大。
@@ -22,3 +24,33 @@
 
 
 2，相关框架
+采集视频、音频    AVFoundation.framework
+
+视频滤镜处理      CoreImage.framework(原生)  GPUImage.framework(第三方)
+在实际项目开发中,开发者更加倾向使用于GPUImage框架.
+首先它在使用性能上与iOS提供的原生框架,并没有差别;其次它的使用便利性高于iOS原生框架,最后也是最重要的GPUImage框架是开源的.如果想要学习GPUImage框架,建议学习OpenGL ES,其实GPUImage的封装和思维都是基于OpenGL ES.
+
+
+视频\音频编码压缩
+硬编码  VideoToolBox(视频)                              AudioToolBox(音频)
+软编码  FFmpeg,X264算法把视频原数据YUV/RGB编码成H264(视频)  fdk_aac 将音频数据PCM转换成AAC(音频)
+
+推流：将采集的音频视频数据通过流媒体协议发送到流媒体服务器
+    流媒体协议：RTMP\RTSP\HLS\FLV
+    视频封装格式：TS\FLV
+    音频封装格式：MP3\AAC
+
+流媒体服务器
+    数据分发  截屏  实时转码 内容检测
+
+拉流：从流媒体服务器中获取音频\视频数据
+    流媒体协议:RTMP\RTSP\HLS\FLV
+
+
+音视频解码
+硬解码  VideoToolBox(视频)                              AudioToolBox(音频)
+软解码  FFmpeg,X264算法把视频原数据YUV/RGB编码成H264(视频)  fdk_aac 将音频数据PCM转换成AAC(音频)
+
+
+播放
+ijkplayer播放框架   kxmovie播放框架 （都是基于FFmpeg框架封装）

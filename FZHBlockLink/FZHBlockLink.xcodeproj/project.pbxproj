@@ -15,6 +15,10 @@
 		040D591323336A22009003B6 /* ZHMVP1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D591123336A22009003B6 /* ZHMVP1TableViewCell.m */; };
 		040D591423336A22009003B6 /* ZHMVP1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040D591223336A22009003B6 /* ZHMVP1TableViewCell.xib */; };
 		040D591D233478B5009003B6 /* ZHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D591C233478B5009003B6 /* ZHDataSource.m */; };
+		043325DD235708900052D5A5 /* ZHOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043325DC235708900052D5A5 /* ZHOneViewController.m */; };
+		043325E02357089A0052D5A5 /* ZHTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043325DF2357089A0052D5A5 /* ZHTwoViewController.m */; };
+		043325E3235708A20052D5A5 /* ZHThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043325E2235708A20052D5A5 /* ZHThreeViewController.m */; };
+		0444C3412339F80E00FD9726 /* VideoToolBox in Resources */ = {isa = PBXBuildFile; fileRef = 0444C3402339F80E00FD9726 /* VideoToolBox */; };
 		0472C7B623150A9600BF12AD /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0472C7B523150A9600BF12AD /* shaders.metal */; };
 		0472C7BC2316602700BF12AD /* ZHMetal2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472C7BA2316602700BF12AD /* ZHMetal2ViewController.m */; };
 		0472C7BD2316602700BF12AD /* ZHMetal2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472C7BB2316602700BF12AD /* ZHMetal2ViewController.xib */; };
@@ -83,6 +87,13 @@
 		040D591223336A22009003B6 /* ZHMVP1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHMVP1TableViewCell.xib; sourceTree = "<group>"; };
 		040D591B233478B5009003B6 /* ZHDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHDataSource.h; sourceTree = "<group>"; };
 		040D591C233478B5009003B6 /* ZHDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHDataSource.m; sourceTree = "<group>"; };
+		043325DB235708900052D5A5 /* ZHOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHOneViewController.h; sourceTree = "<group>"; };
+		043325DC235708900052D5A5 /* ZHOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHOneViewController.m; sourceTree = "<group>"; };
+		043325DE2357089A0052D5A5 /* ZHTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTwoViewController.h; sourceTree = "<group>"; };
+		043325DF2357089A0052D5A5 /* ZHTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTwoViewController.m; sourceTree = "<group>"; };
+		043325E1235708A20052D5A5 /* ZHThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHThreeViewController.h; sourceTree = "<group>"; };
+		043325E2235708A20052D5A5 /* ZHThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHThreeViewController.m; sourceTree = "<group>"; };
+		0444C3402339F80E00FD9726 /* VideoToolBox */ = {isa = PBXFileReference; lastKnownFileType = text; path = VideoToolBox; sourceTree = "<group>"; };
 		0472C7B523150A9600BF12AD /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
 		0472C7B7231511C700BF12AD /* LYShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYShaderTypes.h; sourceTree = "<group>"; };
 		0472C7B92316602700BF12AD /* ZHMetal2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMetal2ViewController.h; sourceTree = "<group>"; };
@@ -222,6 +233,19 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
+		043325DA2357087C0052D5A5 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				043325DB235708900052D5A5 /* ZHOneViewController.h */,
+				043325DC235708900052D5A5 /* ZHOneViewController.m */,
+				043325DE2357089A0052D5A5 /* ZHTwoViewController.h */,
+				043325DF2357089A0052D5A5 /* ZHTwoViewController.m */,
+				043325E1235708A20052D5A5 /* ZHThreeViewController.h */,
+				043325E2235708A20052D5A5 /* ZHThreeViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		0472C7B823165FD800BF12AD /* Metal */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +362,7 @@
 		04B9CB0C22EFF35A00B5B104 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				043325DA2357087C0052D5A5 /* Test */,
 				040D590123331FA7009003B6 /* MVP */,
 				0472C7B823165FD800BF12AD /* Metal */,
 				04B9CB1822F2DE0300B5B104 /* ZHCellchangeViewController.h */,
@@ -392,6 +417,7 @@
 			children = (
 				04D88B63232733E4004E2A60 /* AVPlay */,
 				040D58FB23320752009003B6 /* H264编码 */,
+				0444C3402339F80E00FD9726 /* VideoToolBox */,
 			);
 			path = "原理";
 			sourceTree = "<group>";
@@ -558,6 +584,7 @@
 				04B9CAE322EFF30300B5B104 /* Assets.xcassets in Resources */,
 				04D88B64232733E4004E2A60 /* AVPlay in Resources */,
 				047C4A0023011821005D9B50 /* ZHViewController.xib in Resources */,
+				0444C3412339F80E00FD9726 /* VideoToolBox in Resources */,
 				04B9CAE122EFF2FF00B5B104 /* Main.storyboard in Resources */,
 				040D591423336A22009003B6 /* ZHMVP1TableViewCell.xib in Resources */,
 				047C49FB230112BD005D9B50 /* ZHTransformViewController.xib in Resources */,
@@ -658,6 +685,7 @@
 				047C49F923010B19005D9B50 /* ZHTransformViewController.m in Sources */,
 				040D590823331FF0009003B6 /* ZHPresent.m in Sources */,
 				04EBD9C8231E5EA600F3CE28 /* DCURLNavgation.m in Sources */,
+				043325DD235708900052D5A5 /* ZHOneViewController.m in Sources */,
 				047C4A08230296B6005D9B50 /* ZHMetalManager.m in Sources */,
 				04EBD9C6231E5EA600F3CE28 /* DCURLRouter.m in Sources */,
 				04EBD9C5231E5EA600F3CE28 /* UIViewController+DCURLRouter.m in Sources */,
@@ -665,6 +693,7 @@
 				047C4A112306A501005D9B50 /* ZHMediator+ZHDetail.m in Sources */,
 				040D5900233216F7009003B6 /* ZHVideoBoxManage.m in Sources */,
 				04B9CB1A22F2DE0300B5B104 /* ZHCellchangeViewController.m in Sources */,
+				043325E3235708A20052D5A5 /* ZHThreeViewController.m in Sources */,
 				04B9CADE22EFF2FF00B5B104 /* ViewController.m in Sources */,
 				04B9CB1122EFF38300B5B104 /* ZHBlock.m in Sources */,
 				040D591323336A22009003B6 /* ZHMVP1TableViewCell.m in Sources */,
@@ -674,6 +703,7 @@
 				04EBD9C7231E5EA600F3CE28 /* UIViewController+ReverseValue.m in Sources */,
 				04C28E70230FCE7900DA3F5A /* ZHMetalView.m in Sources */,
 				047C4A0A23029E6C005D9B50 /* metalfile.metal in Sources */,
+				043325E02357089A0052D5A5 /* ZHTwoViewController.m in Sources */,
 				0472C7BC2316602700BF12AD /* ZHMetal2ViewController.m in Sources */,
 				04B9CB1422F010B300B5B104 /* ZHBlockChain.m in Sources */,
 				047C49FF23011821005D9B50 /* ZHViewController.m in Sources */,

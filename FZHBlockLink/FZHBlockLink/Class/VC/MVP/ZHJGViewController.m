@@ -12,6 +12,7 @@
 #import "ZHMVPModel.h"
 #import "ZHPresent.h"
 
+#import <VideoToolbox/VideoToolbox.h>
 @interface ZHJGViewController ()<reloadDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;

@@ -9,10 +9,14 @@
 #import "ZHCellchangeViewController.h"
 #import "ZHTransformViewController.h"
 #import "ZHMetal2ViewController.h"
-@interface ZHCellchangeViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import <CoreLocation/CoreLocation.h>
+#import "ZHOneViewController.h"
+@interface ZHCellchangeViewController ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate>
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) UITableView *table;
 
+@property (nonatomic, strong) CLLocation *location;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @end
 
 @implementation ZHCellchangeViewController
@@ -21,10 +25,72 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.table];
+    [self.locationManager requestLocation];
+    if ([CLLocationManager locationServicesEnabled]) {
+        
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        [self.locationManager startUpdatingLocation];
+    }
+}
+
+#pragma mark - CLLocationManagerDelegate
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
     
 }
 
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+        {
+            NSLog(@"用户还未决定授权");
+            break;
+        }
+        case kCLAuthorizationStatusRestricted:
+        {
+            NSLog(@"访问受限");
+            break;
+        }
+        case kCLAuthorizationStatusDenied:
+        {
+            // 类方法，判断是否开启定位服务
+            if ([CLLocationManager locationServicesEnabled]) {
+                NSLog(@"定位服务开启，被拒绝");
+            } else {
+                NSLog(@"定位服务关闭，不可用");
+            }
+            break;
+        }
+        case kCLAuthorizationStatusAuthorizedAlways:
+        {
+            NSLog(@"获得前后台授权");
+            break;
+        }
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+        {
+            NSLog(@"获得前台授权");
+            break;
+        }
+        default:
+            break;
+    }
+}
 
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
+{
+    CLLocation *newLocation = [locations lastObject];
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        
+        if (placemarks.count > 0) {
+            CLPlacemark *placemark = [placemarks firstObject];
+            
+        }
+    }];
+    [self.locationManager stopUpdatingLocation];
+}
 
 
 #pragma mark - UITableViewDelegate UITableViewDataSource
@@ -68,7 +134,24 @@
     }else if (indexPath.row == 1){
         //ZHLink://MVPVC
         [DCURLRouter pushURLString:@"ZHLink://MVPVC" query:@{} animated:YES replace:NO];
+    }else if(indexPath == 2){
+        [DCURLRouter pushURLString:@"ZHLink://VC" query:@{} animated:YES replace:NO];
+    }else{
+        ZHOneViewController *vc = [ZHOneViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
+//    NSExpression *expression = [NSExpression expressionWithFormat:@"FUNCTION(postalCode,'mglnumberWithFallbackValues:',zipCode)"];
+//    
+//    NSArray *jsonExpression = @[@"to-number",@[@"get",@"postalCode"],@[@"get",@"zipCode"]];
+    
+    double maxin = ceil(19.512);
+    double maxOut = ceil(19.412);
+    double minIn = floor(19.512);
+    double minOut = floor(19.412);
+    
+    NSLog(@"%f %f %f %f",maxin,maxOut,minIn,minOut);
+//    expression
     
     return;
     
